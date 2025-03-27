@@ -59,10 +59,17 @@ const Navbar = () => {
         {/* Logo */}
         <a 
           href="#home" 
-          className="font-display text-2xl font-bold text-primary"
+          className="flex items-center gap-2 font-display text-2xl font-bold text-primary"
           onClick={handleClickNav}
         >
-          BigSteps
+          <div className="w-10 h-10 rounded-full overflow-hidden">
+            <img 
+              src="/lovable-uploads/b2f95788-2540-47a1-be06-482bdbc211a5.png" 
+              alt="BigSteps Logo" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <span>BigSteps</span>
         </a>
 
         {/* Desktop Nav */}
