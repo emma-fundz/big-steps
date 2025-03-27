@@ -155,14 +155,8 @@
   }
 }
 
-/* Smooth scroll for anchor links */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Adjust based on your fixed header height */
-}
-
-/* Custom animations */
 @layer utilities {
+  /* Custom animations */
   .animate-delay-100 {
     animation-delay: 100ms;
   }
@@ -190,4 +184,10 @@ html {
   .animate-delay-1000 {
     animation-delay: 1000ms;
   }
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on your fixed header height */
 }
