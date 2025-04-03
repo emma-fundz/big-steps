@@ -1,69 +1,85 @@
-# Welcome to your Lovable project
 
-## Project info
+# BigSteps - Premium Footwear
 
-**URL**: https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2
+A modern e-commerce website for BigSteps, featuring premium footwear products.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- Responsive design for all device sizes
+- Product showcase
+- About section
+- Services information
+- Location map
+- Contact form
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2) and start prompting.
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui components
 
-Changes made via Lovable will be committed automatically to this repo.
+## Local Development
 
-**Use your preferred IDE**
+```bash
+# Install dependencies
+npm install
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Run development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Deployment to GitHub Pages
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Option 1: Manual Deployment
 
-**Use GitHub Codespaces**
+1. Update the `vite.config.ts` file to set the correct base path for your repository:
+   
+   ```js
+   base: "/your-repository-name/",
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+2. Build the project:
+   
+   ```bash
+   npm run build
+   ```
 
-## What technologies are used for this project?
+3. Deploy using the included script (make sure to update with your GitHub username and repository):
+   
+   ```bash
+   # Make the script executable
+   chmod +x deploy.sh
+   
+   # Run the script
+   ./deploy.sh
+   ```
 
-This project is built with .
+### Option 2: GitHub Actions Automatic Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Push your code to the main branch of your GitHub repository.
+2. Enable GitHub Pages in your repository settings:
+   - Go to Settings > Pages
+   - Set the source to "GitHub Actions"
+3. GitHub Actions will automatically build and deploy your site when you push to the main branch.
 
-## How can I deploy this project?
+## Custom Domain (Optional)
 
-Simply open [Lovable](https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2) and click on Share -> Publish.
+If you want to use a custom domain with your GitHub Pages site:
 
-## I want to use a custom domain - is that possible?
+1. Add your domain to the CNAME file in the public directory
+2. Configure your domain's DNS settings as per GitHub's instructions
+3. Update the base path in `vite.config.ts` to '/'
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Alternative Hosting Options
+
+If you need backend functionality in the future, consider using:
+
+- **Vercel**: Excellent for React applications with serverless functions
+- **Netlify**: Great for static sites with form handling and serverless functions
+- **Firebase**: Provides authentication, database, and hosting in one platform
+
+## License
+
+[MIT](LICENSE)
