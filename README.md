@@ -14,71 +14,38 @@ A modern e-commerce website for BigSteps, featuring premium footwear products.
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- shadcn/ui components
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
 ## Local Development
 
-```bash
-# Install dependencies
-npm install
-
-# Run development server
-npm run dev
-```
+Simply open `index.html` in your browser to view the website locally.
 
 ## Deployment to GitHub Pages
 
-### Option 1: Manual Deployment
+### Method 1: GitHub Pages Settings
 
-1. Update the `vite.config.ts` file to set the correct base path for your repository:
-   
-   ```js
-   base: "/your-repository-name/",
-   ```
+1. Push your code to your GitHub repository
+2. Go to Settings > Pages
+3. Select the branch you want to deploy (usually main)
+4. Your site will be published at `https://[username].github.io/[repository-name]/`
 
-2. Build the project:
-   
-   ```bash
-   npm run build
-   ```
+### Method 2: Manual Deployment
 
-3. Deploy using the included script (make sure to update with your GitHub username and repository):
-   
-   ```bash
-   # Make the script executable
-   chmod +x deploy.sh
-   
-   # Run the script
-   ./deploy.sh
-   ```
+You can also use the included `deploy.sh` script:
 
-### Option 2: GitHub Actions Automatic Deployment
-
-1. Push your code to the main branch of your GitHub repository.
-2. Enable GitHub Pages in your repository settings:
-   - Go to Settings > Pages
-   - Set the source to "GitHub Actions"
-3. GitHub Actions will automatically build and deploy your site when you push to the main branch.
+1. Update the script with your GitHub username and repository name
+2. Make the script executable: `chmod +x deploy.sh`
+3. Run the script: `./deploy.sh`
 
 ## Custom Domain (Optional)
 
 If you want to use a custom domain with your GitHub Pages site:
 
-1. Add your domain to the CNAME file in the public directory
+1. Add a CNAME file to your repository with your domain
 2. Configure your domain's DNS settings as per GitHub's instructions
-3. Update the base path in `vite.config.ts` to '/'
-
-## Alternative Hosting Options
-
-If you need backend functionality in the future, consider using:
-
-- **Vercel**: Excellent for React applications with serverless functions
-- **Netlify**: Great for static sites with form handling and serverless functions
-- **Firebase**: Provides authentication, database, and hosting in one platform
 
 ## License
 
