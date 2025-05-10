@@ -1,52 +1,69 @@
+# Welcome to your Lovable project
 
-# BigSteps - Premium Footwear
+## Project info
 
-A modern e-commerce website for BigSteps, featuring premium footwear products.
+**URL**: https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2
 
-## Features
+## How can I edit this code?
 
-- Responsive design for all device sizes
-- Product showcase
-- About section
-- Services information
-- Location map
-- Contact form
+There are several ways of editing your application.
 
-## Tech Stack
+**Use Lovable**
 
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap 5
+Simply visit the [Lovable Project](https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2) and start prompting.
 
-## Local Development
+Changes made via Lovable will be committed automatically to this repo.
 
-Simply open `index.html` in your browser to view the website locally.
+**Use your preferred IDE**
 
-## Deployment to GitHub Pages
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### Method 1: GitHub Pages Settings
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-1. Push your code to your GitHub repository
-2. Go to Settings > Pages
-3. Select the branch you want to deploy (usually main)
-4. Your site will be published at `https://[username].github.io/[repository-name]/`
+Follow these steps:
 
-### Method 2: Manual Deployment
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-You can also use the included `deploy.sh` script:
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-1. Update the script with your GitHub username and repository name
-2. Make the script executable: `chmod +x deploy.sh`
-3. Run the script: `./deploy.sh`
+# Step 3: Install the necessary dependencies.
+npm i
 
-## Custom Domain (Optional)
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-If you want to use a custom domain with your GitHub Pages site:
+**Edit a file directly in GitHub**
 
-1. Add a CNAME file to your repository with your domain
-2. Configure your domain's DNS settings as per GitHub's instructions
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## License
+**Use GitHub Codespaces**
 
-[MIT](LICENSE)
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with .
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/77d64ec9-749d-4077-bbb1-cafd43d719c2) and click on Share -> Publish.
+
+## I want to use a custom domain - is that possible?
+
+We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
